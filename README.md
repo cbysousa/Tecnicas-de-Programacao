@@ -17,8 +17,16 @@ A primeira tarefa é focada na criação e organização de módulos e pacotes e
 
 ### Como Executar os Testes:
 
-Navegue até o diretório `tarefa_de_programacao_01` no terminal e execute os scripts de teste individualmente usando o comando python <nome_do_arquivo.py>, por exemplo:
+Navegue até o diretório `tarefa_de_programacao_01` no terminal e execute os scripts de teste individualmente usando uma das opções abaixo:
+1. Especificando o caminho completo:
 ```
+python tarefa_de_programacao_01/testa_calculadora.py
+python tarefa_de_programacao_01/testa_conversores.py
+python tarefa_de_programacao_01/testa_matematica.py
+```
+2. Navegando até o diretório e executando:
+```
+cd tarefa_de_programacao_01
 python testa_calculadora.py
 python testa_conversores.py
 python testa_matematica.py
