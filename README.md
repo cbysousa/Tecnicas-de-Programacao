@@ -31,3 +31,5 @@ python testa_calculadora.py
 python testa_conversores.py
 python testa_matematica.py
 ```
+
+## Segunda tarefa (TP02):
