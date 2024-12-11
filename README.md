@@ -33,3 +33,16 @@ python testa_matematica.py
 ```
 
 ## Segunda tarefa (TP02):
+A segunda tarefa possui foco na Programação Orientada a Objetos em Python, abordando conceitos como criação de classes, métodos, encapsulamento e interação com objetos. A tarefa foi dividida em cinco etapas principais:
+
+Criando um Módulo Calculadora Orientado a Objetos: Implementar uma classe `Calculadora` com métodos para as quatro operações matemáticas básicas (soma, subtração, multiplicação e divisão). Criar testes unitários para validar a funcionalidade da classe.
+
+Adicionando Memória à Calculadora: Estender a classe `Calculadora` para incluir um atributo privado `acumulador` que armazena o resultado da última operação. Modificar os métodos para utilizar o `acumulador` quando apenas um operando for fornecido. Atualizar os testes unitários para contemplar a nova funcionalidade.
+
+Implementando a classe Conta: Criar uma classe `Conta` com métodos para creditar, debitar, obter número da conta e obter saldo.
+
+Implementando a classe Banco: Implementar uma classe Banco com métodos para cadastrar contas, procurar contas, creditar em contas, debitar de contas, consultar saldo e realizar transferências entre contas.
+
+Interagindo com o Sistema Bancário: Desenvolver um programa que simula um terminal de atendimento bancário, utilizando as classes `Conta` e `Banco`. O programa permite que o usuário crie contas e realize operações de crédito, débito, transferência e consulta de saldo.
+
+Os arquivos relevantes para esta tarefa estão localizados no diretório tarefa_de_programacao_02. Instruções mais detalhadas sobre cada etapa, incluindo a especificação das classes e métodos, podem ser encontradas no enunciado da TP02.
