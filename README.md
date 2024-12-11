@@ -45,4 +45,4 @@ Implementando a classe Banco: Implementar uma classe Banco com métodos para cad
 
 Interagindo com o Sistema Bancário: Desenvolver um programa que simula um terminal de atendimento bancário, utilizando as classes `Conta` e `Banco`. O programa permite que o usuário crie contas e realize operações de crédito, débito, transferência e consulta de saldo.
 
-Os arquivos relevantes para esta tarefa estão localizados no diretório tarefa_de_programacao_02. Instruções mais detalhadas sobre cada etapa, incluindo a especificação das classes e métodos, podem ser encontradas no enunciado da TP02.
+Os arquivos relevantes para esta tarefa estão localizados no diretório tarefa_de_programacao_02. Instruções mais detalhadas sobre cada etapa, incluindo a especificação das classes e métodos, podem ser encontradas no enunciado da TP02 (https://github.com/cbysousa/Tecnicas-de-Programacao/blob/main/tarefa_de_programacao_02/TP02.pdf).
