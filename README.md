@@ -55,13 +55,13 @@ A terceira tarefa expande o projeto do Sistema Bancário (SisBanco) desenvolvido
 - Adicionada a funcionalidade de render juros com base em uma taxa fornecida.
 A classe possibilita calcular os rendimentos para contas de poupança ao final de um período.
 
-### Classe `ContaEspecial`:
+#### Classe `ContaEspecial`:
 
 - Foi criada outra classe derivada de `Conta` chamada `ContaEspecial`.
 - O método `creditar` foi sobrescrito para incluir um *bônus incremental* em cada crédito.
 - Adicionada a funcionalidade de render bônus acumulados.
 
-### Rendimentos no Banco:
+#### Rendimentos no Banco:
 
 A classe `Banco` foi estendida para suportar:
 - Render juros em contas poupança com base em uma taxa privada de correção do banco.
