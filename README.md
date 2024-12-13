@@ -46,3 +46,35 @@ Implementando a classe Banco: Implementar uma classe Banco com métodos para cad
 Interagindo com o Sistema Bancário: Desenvolver um programa que simula um terminal de atendimento bancário, utilizando as classes `Conta` e `Banco`. O programa permite que o usuário crie contas e realize operações de crédito, débito, transferência e consulta de saldo.
 
 Os arquivos relevantes para esta tarefa estão localizados no diretório tarefa_de_programacao_02. Instruções mais detalhadas sobre cada etapa, incluindo a especificação das classes e métodos, podem ser encontradas no enunciado da TP02 (https://github.com/cbysousa/Tecnicas-de-Programacao/blob/main/tarefa_de_programacao_02/TP02.pdf).
+
+# Terceira Tarefa (TP03):
+A terceira tarefa expande o projeto do Sistema Bancário (SisBanco) desenvolvido na TP02, utilizando conceitos avançados de Programação Orientada a Objetos, como herança, sobrescrita de métodos e polimorfismo. As funcionalidades implementadas nesta etapa são:
+
+#### Classe `ContaPoupanca`:
+- Foi criada uma classe derivada de `Conta` chamada `ContaPoupanca`.
+- Adicionada a funcionalidade de render juros com base em uma taxa fornecida.
+A classe possibilita calcular os rendimentos para contas de poupança ao final de um período.
+
+### Classe `ContaEspecial`:
+
+- Foi criada outra classe derivada de `Conta` chamada `ContaEspecial`.
+- O método `creditar` foi sobrescrito para incluir um *bônus incremental* em cada crédito.
+- Adicionada a funcionalidade de render bônus acumulados.
+
+### Rendimentos no Banco:
+
+A classe `Banco` foi estendida para suportar:
+- Render juros em contas poupança com base em uma taxa privada de correção do banco.
+- Render bônus em contas especiais.
+Também foram incluídos métodos para configurar e consultar a taxa de juros do banco.
+
+### Interface do Sistema Bancário:
+
+O módulo `terminal_atendimento.py` foi atualizado para incluir as seguintes opções no menu principal:
+- [5] Render Juros: Calcula os rendimentos de uma conta poupança.
+- [6] Render Bônus: Converte bônus acumulados em saldo para contas especiais.
+- [7] Alterar Taxa de Juros: Permite ao banco configurar uma nova taxa de correção para poupança.
+
+## Como Executar o Sistema:
+Acesse o diretório da TP03 no terminal e execute o arquivo `terminal_atendimento.py`.
+Use as opções do menu para testar as novas funcionalidades, como rendimentos e gerenciamento de contas.
