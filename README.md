@@ -68,7 +68,7 @@ A classe `Banco` foi estendida para suportar:
 - Render bônus em contas especiais.
 Também foram incluídos métodos para configurar e consultar a taxa de juros do banco.
 
-### Interface do Sistema Bancário:
+#### Interface do Sistema Bancário:
 
 O módulo `terminal_atendimento.py` foi atualizado para incluir as seguintes opções no menu principal:
 - [5] Render Juros: Calcula os rendimentos de uma conta poupança.
