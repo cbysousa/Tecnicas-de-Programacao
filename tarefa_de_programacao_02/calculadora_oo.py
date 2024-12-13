@@ -25,7 +25,7 @@ class Calculadora:
     
     def divisao(self, operando_a, operando_b=None):
         if operando_b is None:
-            self.__acumulador /= operando_a
+            self.__acumulador = acumulador / operando_a
         else:
             self.__acumulador = operando_a / operando_b
         return self.__acumulador
