@@ -32,7 +32,7 @@ class ContaEspecial:
         self.__bonus = 0
 
     def creditar(self, valor:float) -> None:
-       self.__saldo += valor & 0.1
+       self.__saldo += valor * 0.1
        super().creditar(valor)
 
 class Banco:
