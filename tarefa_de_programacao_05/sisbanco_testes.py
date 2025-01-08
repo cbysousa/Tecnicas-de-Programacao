@@ -43,10 +43,39 @@ class TestContaEspecial(unittest.TestCase):
         self.assertEqual(conta.get_saldo(), 200)
 
 class TestContaImposto(unittest.TestCase):
-    pass
+    def test_debitar(self):
+        pass
+
+    def test_get_taxa(self):
+        pass
+
+    def test_set_taxa(self):
+        pass
 
 class TestBanco(unittest.TestCase):
-    pass
+    def test_casdastrar(self):
+        pass
+
+    def test_procurar(self):
+        pass
+
+    def test_creditar(self):
+        pass
+
+    def test_debitar(self):
+        pass
+
+    def test_saldo(self):
+        pass
+
+    def test_transferir(self):
+        pass
+
+    def test_get_taxa_poupanca(self):
+        pass
+
+    def test_set_taxa_poupanca(self):
+        pass
 
 if __name__ == '__main__':
     unittest.main()
