@@ -41,41 +41,88 @@ class TestContaEspecial(unittest.TestCase):
         conta = ContaEspecial('40028922')
         conta.creditar(200)
         self.assertEqual(conta.get_saldo(), 200)
+        self.assertEqual(conta._ContaEspecial__bonus, 2.0)
 
 class TestContaImposto(unittest.TestCase):
     def test_debitar(self):
-        pass
+        conta = ContaImposto('1234')
+        conta.creditar(100)
+        conta.debitar(10)
+        self.assertAlmostEqual(conta.get_saldo(), 89.99, places=2)
 
     def test_get_taxa(self):
-        pass
+        conta = ContaImposto('1234')
+        self.assertEqual(conta.get_taxa(), 0.001)
 
     def test_set_taxa(self):
-        pass
+        conta = ContaImposto('1234')
+        conta.set_taxa(0.005)
+        self.assertEqual(conta.get_taxa(), 0.005)
 
 class TestBanco(unittest.TestCase):
     def test_casdastrar(self):
-        pass
+        banco = Banco()
+        conta = Conta('1234')
+        banco.cadastrar(conta)
+        self.assertEqual(banco.procurar('1234'), conta)
 
     def test_procurar(self):
-        pass
+        banco = Banco()
+        conta = Conta('1234')
+        banco.cadastrar(conta)
+        self.assertEqual(banco.procurar('1234'), conta)
+        self.assertIsNone(banco.procurar('5678'))
 
     def test_creditar(self):
-        pass
+        banco = Banco()
+        conta = Conta('1234')
+        banco.cadastrar(conta)
+        banco.creditar('1234', 100)
+        self.assertEqual(conta.get_saldo(), 100)
 
     def test_debitar(self):
-        pass
+        banco = Banco()
+        conta = Conta('1234')
+        banco.cadastrar(conta)
+        banco.creditar('1234', 100)
+        banco.debitar('1234', 50)
+        self.assertEqual(conta.get_saldo(), 50)
 
     def test_saldo(self):
-        pass
+        banco = Banco()
+        conta = Conta('1234')
+        banco.cadastrar(conta)
+        banco.creditar('1234', 100)
+        self.assertEqual(banco.saldo('1234'), 100)
 
     def test_transferir(self):
-        pass
+        banco = Banco()
+        conta_origem = Conta('1234')
+        conta_destino = Conta('5678')
+        banco.cadastrar(conta_origem)
+        banco.cadastrar(conta_destino)
+        banco.creditar('1234', 100)
+        banco.transferir('1234', '5678', 50)
+        self.assertEqual(conta_origem.get_saldo(), 50)
+        self.assertEqual(conta_destino.get_saldo(), 50)
 
     def test_get_taxa_poupanca(self):
-        pass
+        banco = Banco(taxa_poupanca=0.01)
+        self.assertEqual(banco.get_taxa_poupanca(), 0.01)
 
     def test_set_taxa_poupanca(self):
-        pass
+        banco = Banco()
+        banco.set_taxa_poupanca(0.02)
+        self.assertEqual(banco.get_taxa_poupanca(), 0.02)
+    
+    def test_get_taxa_impost(self):
+        banco = Banco(taxa_imposto=0.005)
+        self.assertEqual(banco.get_taxa_imposto(), 0.005)
+
+    def test_set_taxa_imposto(self):
+        banco = Banco()
+        banco.set_taxa_imposto(0.01)
+        self.assertEqual(banco.get_taxa_imposto(), 0.01)
 
 if __name__ == '__main__':
     unittest.main()
