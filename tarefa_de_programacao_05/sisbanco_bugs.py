@@ -18,7 +18,6 @@ class ContaAbstrata(ABC):
    def get_saldo(self) -> float:
       return self.__numero
 
-
 class Conta(ContaAbstrata):
    def __init__(self, numero:str):
       super().__init__(numero)
