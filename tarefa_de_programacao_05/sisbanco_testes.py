@@ -1,6 +1,6 @@
 import unittest
 
-from sisbanco import Conta, Banco, ContaAbstrata, ContaEspecial, ContaImposto, ContaPoupanca
+from sisbanco_bugs import Conta, Banco, ContaAbstrata, ContaEspecial, ContaImposto, ContaPoupanca
 
 class TestConta(unittest.TestCase):
     def test_creditar(self):
